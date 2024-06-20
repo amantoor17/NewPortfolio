@@ -173,6 +173,13 @@ a{
   }
 
   .user-image{
+    padding:2.5rem;
+    filter:grayscale(1);
+    transition:all 1s;
+    animation: scaleImage 5s linear infinite;
+  }
+
+  /* .user-image{
     background-image: url(./images/userAsset/A11.png);
     width: 250px;
     height: 250px;
@@ -180,22 +187,25 @@ a{
     margin: 2.5rem;
     padding: 4rem;
     border-radius: 50px;
-    /* background-color: #f0f0f0; 
-    background-clip: padding-box;  */
+    background-color: #f0f0f0; 
+    background-clip: padding-box; 
     filter:grayscale(1);
     transition:all 0.001s;
     animation: scaleImage 5s linear infinite;
-  }
+  } */
 
-  .user-image:hover {
+  /* .user-image:hover {
     background-image: url('./images/userAsset/A1.jpg');
     width: 250px;
     height: 250px;
     
-  }
+  }  */
 
   .user-image img{
     z-index:-9;
+    width: 330px;
+    height: 330px;
+    object-fit: cover;
   }
 
 
