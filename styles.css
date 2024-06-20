@@ -177,6 +177,7 @@ a{
     filter:grayscale(1);
     transition:all 1s;
     animation: scaleImage 5s linear infinite;
+    border-radius: 20px;
   }
 
   /* .user-image{
@@ -206,6 +207,7 @@ a{
     width: 330px;
     height: 330px;
     object-fit: cover;
+    border-radius: 5px;
   }
 
 
