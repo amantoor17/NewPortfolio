@@ -143,7 +143,7 @@ a{
     position: relative;
     z-index: 1;
   }
-  .btn-pink::before {
+.btn-pink::before {
     content: "";
     position: absolute;
     background-color: #fff;
@@ -156,17 +156,19 @@ a{
     transform-origin: left;
     transition: all 0.8s;
   }
-  .btn-pink:hover::before {
+
+.btn-pink:hover::before {
     transform: scaleX(1);
-  }
-  .btn-pink:hover {
+}
+  
+.btn-pink:hover {
     border: solid 3px var(--bgOrange);
     color: black;
-  }
+}
 
-  .hero-section-right{
+.hero-section-right{
     position:relative;
-  }
+}
 
   .absolute{
     position:absolute;
@@ -179,28 +181,6 @@ a{
     animation: scaleImage 5s linear infinite;
     border-radius: 20px;
   }
-
-  /* .user-image{
-    background-image: url(./images/userAsset/A11.png);
-    width: 250px;
-    height: 250px;
-    background-size: cover;
-    margin: 2.5rem;
-    padding: 4rem;
-    border-radius: 50px;
-    background-color: #f0f0f0; 
-    background-clip: padding-box; 
-    filter:grayscale(1);
-    transition:all 0.001s;
-    animation: scaleImage 5s linear infinite;
-  } */
-
-  /* .user-image:hover {
-    background-image: url('./images/userAsset/A1.jpg');
-    width: 250px;
-    height: 250px;
-    
-  }  */
 
   .user-image img{
     z-index:-9;
@@ -500,6 +480,11 @@ a{
   }
 
   @media (max-width:1300px) {
+    .container{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
     .page-header {
       padding-top: 30px;
       color: var(--bgOrange);
@@ -555,6 +540,147 @@ a{
       scale: 0.55;
     }
   }
+
+  @media only screen and (max-width: 600px){
+    .container{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin:0 auto;
+      width:auto ;
+    }
+
+    .hero-section{
+      position:relative;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+  }
+
+    .faded-text{
+      opacity: 0;
+    }
+
+    
+.hero-section-left{
+  /* width:100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+
+.hero-section-heading{
+  font-size: 15px;
+  color: #343d68;
+  font-weight: 500;
+}
+
+.role{
+  color: #4e45d5;
+  font-weight: 800;
+}
+
+.hero-section-sub-heading{
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.hero-section-description{
+  margin-top: 1rem;
+  width: 70%;
+  font-weight: 500;
+}
+
+.hero-section-right{
+  position:relative;
+}
+
+.absolute{
+  position:absolute;
+}
+
+.user-image{
+  padding:1rem;
+  filter:grayscale(1);
+  transition:all 1s;
+  animation: scaleImage 5s linear infinite;
+  border-radius: 20px;
+}
+
+.user-image img{
+  z-index:-9;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 1px;
+}
+
+.icons>img{
+  width: 50%;
+}
+
+.icon-dots{
+  z-index:9;
+  bottom:-1rem;
+  right:-2.5em;
+  animation-name:dotsAnimation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.icon-zigzag{
+  z-index:9;
+  top:1.5em;
+  left:-1em;
+  animation:zigzagAnimation 5s ease-in infinite;
+}
+
+#skills{
+  flex-direction: column;
+  width: 100%;
+}
+
+.skills-container{
+  
+  /* position:relative;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: ;
+  justify-content: center;
+  align-items: center;
+  padding:0;
+  margin:0;
+  gap:5px; */
+}
+
+.skill-fade-text{
+  opacity: 0;
+}
+
+.skill-container-left{
+  width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-container-right{
+  width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-container-right>img{
+  height: 40px;
+  width: 40px;
+  padding:0;
+
+}
+
+
+} 
 
   .skills-container{
     position:relative;
@@ -751,3 +877,25 @@ footer{
   display:flex;
   gap:1rem;
 }
+
+ /* .user-image{
+    background-image: url(./images/userAsset/A11.png);
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    margin: 2.5rem;
+    padding: 4rem;
+    border-radius: 50px;
+    background-color: #f0f0f0; 
+    background-clip: padding-box; 
+    filter:grayscale(1);
+    transition:all 0.001s;
+    animation: scaleImage 5s linear infinite;
+  } */
+
+  /* .user-image:hover {
+    background-image: url('./images/userAsset/A1.jpg');
+    width: 250px;
+    height: 250px;
+    
+  }  */
