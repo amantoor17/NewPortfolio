@@ -325,9 +325,9 @@ a{
   .project-card{
     width:90%;
     height:550px;
-    background-image: url(./images/projects/Project1.png);
+    /* background-image: url(./images/projects/Project1.png); */
     background-size: cover;
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     position:relative;
     box-shadow:0px 0px 40px #1f1f1f;
   }
@@ -481,6 +481,10 @@ a{
   #project6{
     margin-left:120px;
     background-image: url(./images/projects/razorPay.png);
+  }
+
+  #project7{
+    background-image: url(./images/projects/discord.png);
   }
 
   @media (max-width:1300px) {
