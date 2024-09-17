@@ -411,9 +411,8 @@ a{
   .project-skills-container{
     width:60%;
     display:flex;
-    gap:10px;
+    gap:50px;
     flex-wrap:wrap;
-  
   }
 
   .project-skill{
@@ -459,24 +458,29 @@ a{
   }
 
   #project1{
-    background-image: url(./images/projects/simon.png);
+    background-image: url(./images/projects/randomGifs.png);
   }
 
   #project2{
     margin-left:120px;
-    background-image: url(./images/projects/Drumkit.png);
+    background-image: url(./images/projects/Blogs.png);
   }
   #project3{
-    background-image: url(./images/projects/Gallery.png);
+    background-image: url(./images/projects/StudyNotion.png);
   }
 
   #project4{
     margin-left:120px;
-    background-image: url(./images/projects/Parallax.png);
+    background-image: url(./images/projects/shoppingCart.png);
   }
 
   #project5{
-    background-image: url(./images/projects/Tindog.png);
+    background-image: url(./images/projects/devDetective.png);
+  }
+
+  #project6{
+    margin-left:120px;
+    background-image: url(./images/projects/razorPay.png);
   }
 
   @media (max-width:1300px) {
